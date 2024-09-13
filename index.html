@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Matt's Recipes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css" />
-    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
-    <style>
-      a, a:visited {
-        color: black;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-<body>
-<div class="content">
-<h1>Matt's Recipes</h1>
-<p>All of these recipes would not be possible without my spouse, Sunny. Their guidance, encouragement, and (always good) suggestions keep me on the path of improvement.</p>
-<hr/>
-<h3><a href="banana-nut-bread.html">Banana (Nut) Bread</a></h3>
-<h3><a href="cayenne-curry-mixed-nuts.html">Cayenne & Curry Mixed Nuts</a></h3>
-<h3><a href="ciabatta.html">Ciabatta</a></h3>
-<h3><a href="french-toast.html">French Toast</a></h3>
-<h3><a href="gochujang-snickerdoodles.html">Gochujang Snickerdoodles</a></h3>
-<h3><a href="naan.html">Naan</a></h3>
-<h3><a href="rosemary-oregano-bread.html">Rosemary & Oregano Bread</a></h3>
-<h3><a href="wheat-sandwich-bread.html">Wheat Sandwich Bread</a></h3>
-</div>
-</body>
+<html data-theme="light">
+    <head>
+        <title>Matt Braddock's Recipes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+        <style>
+            #ingredients, #directions, #footer, .card {
+                margin-top: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="section">
+            <div class="container">
+                <p class="is-size-2 has-text-centered">Matt Braddock's Recipes</p>
+                <br />
+                <div class="columns is-centered">
+                    <div class="select">
+                        <select id="recipe-select">
+                            <option value="banana-bread">Banana (Nut) Bread</option>
+                            <option value="cayenne-curry-mixed-nuts">Cayenne & Curry Mixed Nuts</option>
+                            <option value="ciabatta">Ciabatta</option>
+                            <option value="french-toast">French Toast</option>
+                            <option value="gochujang-snickerdoodles">Gochujang Snickerdoodles</option>
+                            <option value="naan">Naan</option>
+                            <option value="wheat-sandwich-bread">Wheat Sandwich Bread</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="columns is-centered"><div class="column is-four-fifths"><div class="card">
+                <header class="card-header">
+                    <p class="card-header-title is-size-3" id="title"></p>
+                </header>
+                <div class="card-content"><div class="content">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <div class="is-size-5">Ingredients</div>
+                            <div id="ingredients"></div>
+                        </div>
+                        <div class="column is-two-thirds">
+                            <div class="is-size-5">Directions</div>
+                            <div id="directions"></div>
+                        </div>
+                    </div>
+                </div></div>
+            </div></div></div>
+            <div class="container"><div class="columns is-centered" id="footer">
+                Recipes powered by&nbsp;<a href="https://github.com/slashinfty/cookscript" target="_blank">CookScript</a>
+            </div></div>
+        </section>
+        <script type="module" src="./index.js"></script>
+    </body>
 </html>
