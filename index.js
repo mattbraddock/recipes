@@ -44,23 +44,23 @@ Bake until the loaves are puffy and golden brown, approximately 15-30 minutes de
 #Roux
 Boil one part @water{75%grams} and one part @milk{75%grams} and pour over @all-purpose flour{50%grams} to make a roux, then allow to cool to room temperature
 #Dough
-Mix together the roux with @all-purpose flour{250%grams}, @semolina flour{200%grams}, @dry milk powder{25%grams}, @granulated sugar{35%grams}, @instant yeast{2%tsp}, @salt{1 1/2%tsp}, @water{150%grams}, @honey[warmed]{1%tbs}, @egg{1}, and @egg yolks{2} in a stand mixer until flour is hydrated
+Mix together the roux with @all-purpose flour{250%grams}, @semolina flour{200%grams}, @dry milk powder{25%grams}, @granulated sugar{35%grams}, @instant yeast{2%tsp}, @salt{1 1/2%tsp}, @water{150%grams}, @honey[warmed]{1%tbs}, @egg{1%}, and @egg yolks{2%} in a stand mixer until flour is hydrated
 Add @unsalted butter[softened]{4%tbs} in stages and mix with a dough hook until the dough starts to release from the walls of the mixer
 Shape the dough into a ball, then cover and rest until doubled
 Separate the dough into 3 equal pieces, then roll each piece and braid the dough
 Place the dough in a greased loaf pan, then cover and rest for 90 minutes
 +Preheat oven to 350F after one hour
 #Wash
-Mix together @egg whites{2} and @milk{1%tbs} and apply to the top of the loaf, then bake for 35 minutes, transferring to a cooling rack when done
+Mix together @egg whites{2%} and @milk{1%tbs} and apply to the top of the loaf, then bake for 35 minutes, transferring to a cooling rack when done
 #Bath
 When ready to cook, slice the bread into thick slices
-Mix together @half and half{2%cups}, @eggs{6}, @honey[warmed]{4%tbs}, and @salt{1/2%tsp} with a whisk and put in a wide bowl or container
+Mix together @half and half{2%cups}, @eggs{6%}, @honey[warmed]{4%tbs}, and @salt{1/2%tsp} with a whisk and put in a wide bowl or container
 For each slice of bread, soak both sides for approximately 2 minutes each, then immediately transfer to a hot griddle and cook to desired finish`,
 
     'gochujang-snickerdoodles':
 `>Gochujang Snickerdoodles
 Mix together @unsalted butter[softened]{1%!tbs}, @dark brown sugar{1%tbs}, @gochujang{1 1/2%tbs}, and @honey{3/4%tsp}, then set aside
-Mix together @unsalted butter[softened]{7%!tbs}, @light brown sugar{1 1/2%tsp}, @granulated sugar{200%grams}, @salt{1/2%tsp}, @ground cinnamon{1/4%tsp}, @vanilla extract{1%tsp}, @egg{1}, and @egg yolk{1}.
+Mix together @unsalted butter[softened]{7%!tbs}, @light brown sugar{1 1/2%tsp}, @granulated sugar{200%grams}, @salt{1/2%tsp}, @ground cinnamon{1/4%tsp}, @vanilla extract{1%tsp}, @egg{1%}, and @egg yolk{1%}.
 Add in @all-purpose flour{220%grams} and @baking powder{1/2%tsp}, then mix until well combined
 Microwave the gochujang mixture for a few seconds, then swirl it into the dough
 Place the dough into the refrigerator and preheat oven to 350F
@@ -125,6 +125,7 @@ const addDirectionSection = (section, items, start) => {
 }
 
 const changeRecipe = value => {
+    window.localStorage.setItem('lastOption', value);
     const recipe = new Recipe(recipes[value]).value();
     document.querySelector('#title').innerHTML = recipe.title;
     document.querySelector('#ingredients').innerHTML = '';
@@ -213,7 +214,9 @@ const changeRecipe = value => {
 document.querySelector('#recipe-select').addEventListener('change', event => changeRecipe(event.target.value));
 
 document.addEventListener("DOMContentLoaded", () => {
+    const savedOption = window.localStorage.getItem('lastOption');
     const options = [...document.querySelectorAll('option')];
-    options[Math.floor(Math.random() * Math.floor(options.length))].selected = 'selected';
+    const index = typeof savedOption === 'string' ? options.findIndex(opt => opt.value === savedOption) : Math.floor(Math.random() * Math.floor(options.length));
+    options[index].selected = 'selected';
     changeRecipe(document.querySelector('#recipe-select').value)
 });
