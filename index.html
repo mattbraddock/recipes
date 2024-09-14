@@ -10,11 +10,21 @@
             #ingredients, #directions, #footer, .card {
                 margin-top: 1em;
             }
+
+            @media print {
+                #header, #footer {
+                    display: none !important;
+                }
+
+                #card {
+                    width: 100%;
+                }
+            }
         </style>
     </head>
     <body>
         <section class="section">
-            <div class="container">
+            <div class="container" id="header">
                 <p class="is-size-2 has-text-centered">Matt Braddock's Recipes</p>
                 <br />
                 <div class="columns is-centered is-mobile">
@@ -31,9 +41,9 @@
                         </select>
                     </div>
                 </div>
+                <hr />
             </div>
-            <hr />
-            <div class="columns is-centered is-mobile"><div class="column is-three-quarters-desktop is-four-fifths-tablet is-full-mobile"><div class="card">
+            <div class="columns is-centered is-mobile"><div class="column is-three-quarters-desktop is-four-fifths-tablet is-full-mobile" id="card"><div class="card">
                 <header class="card-header">
                     <p class="card-header-title is-size-3" id="title"></p>
                 </header>
