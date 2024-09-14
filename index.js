@@ -80,6 +80,18 @@ Lightly flour the top of the dough, then cover and allow to rest for 30 minutes
 One at a time, flatten the dough to approximately 3mm thick and cook in the skillet
 +Cooking time is around 1 minute for each side; monitor the color of the bottom to determine when to flip`,
 
+    'pumpernickel-sandwich-bread':
+`>Pumpernickel Sandwich Bread
+Mix together @water[lukewarm]{275%grams}, @milk{75%grams, @blackstrap molasses{65%grams}, and @dark brown sugar{1 1/2%tbs}, then set aside
+Whisk together @bread flour{300%grams}, @rye flour{200%grams}, @vital wheat gluten{1 1/2%tsp}, @instant yeast{1 1/2%tsp}, @salt{2%tsp}, @dark cocoa powder{2%tbs}, @ground caraway{1 1/2%tsp}, and @caraway seed{3/4%tsp}
+Combine the wet and dry ingredients, then use a stand mixer with a dough hook until well integrated
+Add @unsalted butter[softened]{2%tbs} and continue in the stand mixer until it stops sticking to the walls
+Shape the dough into a ball, gently flour the dough, then cover and rest until doubled (approximately 2 hours)
+Turn the dough onto a clean surface and shape the dough, place it in a lightly greased bread pan, then cover and rest until doubled (approximately 90 minutes)
++After one hour, preheat oven to 375F
+Bake for 20 minutes, then cover with foil and bake for an additional 30 minutes
+Move to a cooling rack and allow to cool completely before slicing`,
+
     'wheat-sandwich-bread':
 `sections=ingredients
 >Wheat Sandwich Bread
