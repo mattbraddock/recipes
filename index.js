@@ -82,7 +82,7 @@ One at a time, flatten the dough to approximately 3mm thick and cook in the skil
 
     'pumpernickel-sandwich-bread':
 `>Pumpernickel Sandwich Bread
-Mix together @water[lukewarm]{275%grams}, @milk{75%grams, @blackstrap molasses{65%grams}, and @dark brown sugar{1 1/2%tbs}, then set aside
+Mix together @water[lukewarm]{275%grams}, @milk{75%grams}, @blackstrap molasses{65%grams}, and @dark brown sugar{1 1/2%tbs}, then set aside
 Whisk together @bread flour{300%grams}, @rye flour{200%grams}, @vital wheat gluten{1 1/2%tsp}, @instant yeast{1 1/2%tsp}, @salt{2%tsp}, @dark cocoa powder{2%tbs}, @ground caraway{1 1/2%tsp}, and @caraway seed{3/4%tsp}
 Combine the wet and dry ingredients, then use a stand mixer with a dough hook until well integrated
 Add @unsalted butter[softened]{2%tbs} and continue in the stand mixer until it stops sticking to the walls
