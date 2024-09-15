@@ -92,6 +92,19 @@ Turn the dough onto a clean surface and shape the dough, place it in a lightly g
 Bake for 20 minutes, then cover with foil and bake for an additional 30 minutes
 Move to a cooling rack and allow to cool completely before slicing`,
 
+    'three-cheese-bread':
+`>Three Cheese Bread
+Whisk together @bread flour{375%grams}, @semolina flour{125%grams}, @instant yeast{2%tsp}, and @salt{1%tsp}
+Mix in @water[lukewarm]{250%grams} and @milk{100%grams} until well integrated
+Add in @provolone cheese[grated]{100%grams} and knead until smooth
+Shape into a ball and place in a bowl, then cover and allow to rest until doubled (approximately 90 minutes)
+Deflate the dough and fold in @white cheddar cheese[shredded]{125%grams}, then place in a banneton dusted with flour and cover and rest for an hour
++Place a Dutch oven inside the oven and preheat at 475F
+Move the dough to the Dutch oven using parchment paper, then score the bread and sprinkle on @asiago cheese[thinly shredded]{25%grams}
+Bake for 20 minutes with the lid on
+Reduce the oven to 425F and bake uncovered for 10 minutes, then replace the lid and bake for an additional 10 minutes
+Move to a cooling rack and allow to cool completely before slicing`,
+
     'wheat-sandwich-bread':
 `sections=ingredients
 >Wheat Sandwich Bread
